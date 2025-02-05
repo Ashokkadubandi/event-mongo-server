@@ -1,0 +1,22 @@
+POST http://localhost:3002/user/register
+Content-Type: application/json
+
+{
+    "username":"ashokweb",
+    "email":"web@2021",
+    "password":"79"
+}
+###
+
+POST http://localhost:3002/user/login
+Content-Type: application/json
+
+{
+    "username":"ashokwebdev",
+    "password":"796"
+}
+
+###
+
+# GET http://localhost:3002/user/userDetails
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFzaG9rd2ViZGV2IiwiaWF0IjoxNzM4NzY3Njg4fQ.9VCaMDA8QlVXkk-jJPkMsHZtUQ6tTMX2e0HvYFuv3Vw
