@@ -20,3 +20,21 @@ Content-Type: application/json
 
 # GET http://localhost:3002/user/userDetails
 # Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFzaG9rd2ViZGV2IiwiaWF0IjoxNzM4NzY3Njg4fQ.9VCaMDA8QlVXkk-jJPkMsHZtUQ6tTMX2e0HvYFuv3Vw
+
+POST http://localhost:3002/events/upload
+Content-Type: application/json
+
+{
+    "name":"Fire panda",
+    "date":"2025-02-22",
+    "category":"Gaming",
+    "description":"BGMI heavy competition on this weekend we are expect for someone who bother thier games and rules and chill to audience have a great compensation",
+    "imgUrl":"https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/64619cb3068f5_bgmi-events.jpeg?d=700x400"
+}
+###
+
+GET http://localhost:3002/events?upcoming=false&category=Music
+Content-Type: application/json
+###
+
+GET http://localhost:3002/events/67a42dba8f49b9cdd828ac6c
