@@ -14,8 +14,8 @@ connectDB()
 app.use('/user',authRoutes)
 app.use('/events',eventRoutes)
 
+const PORT = process.env.PORT || 3002
 
-
-app.listen(3002,() => {
+app.listen(PORT,() => {
     console.log('http://localhost:3002')
 })
