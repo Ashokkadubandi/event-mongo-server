@@ -51,8 +51,10 @@ router.post('/login',async (req,res) => {
     }
     let payload = {username:username}
     let jwtToken = jwt.sign(payload,process.env.SEC_KEY)
+    let resTrans = {id:user._id,name:user.username,mail:user.email}
     res.status(200).json({
         jwtToken,
+        user:resTrans,
     })
 })
 
